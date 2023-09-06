@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/task"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:ems="250"
+        android:hint="Enter The Task"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:id="@+id/linearLayout"
+        android:layout_below="@id/task"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/brain"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5sp"
+            android:tag="brain"
+            android:layout_weight="1"
+            android:background="@drawable/background_box"
+            android:src="@drawable/brain"
+            android:layout_marginRight="10dp"
+             />
+
+        <ImageView
+            android:id="@+id/hand"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="10dp"
+            android:tag="hand"
+            android:layout_weight="1"
+            android:background="@drawable/background_desabled_for_box"
+            android:src="@drawable/hand"
+             />
+
+        <ImageView
+            android:id="@+id/energy"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:tag="energy"
+
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_desabled_for_box"
+            android:src="@drawable/energy"
+           />
+
+        <ImageView
+            android:id="@+id/money"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/background_desabled_for_box"
+            android:layout_weight="1"
+            android:tag="money"
+            android:src="@drawable/money"
+            android:layout_marginRight="10dp"
+             />
+
+        <ImageView
+            android:id="@+id/health"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:tag="health"
+            android:background="@drawable/background_desabled_for_box"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/health"
+             />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/background_for_btn"
+        android:text="ADD"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:padding="0dp"
+        android:layout_margin="30dp"
+        android:textSize="30sp"
+        android:background="@drawable/cancle_btn_backgriund"
+        android:text="X" />
+
+
+</RelativeLayout>
